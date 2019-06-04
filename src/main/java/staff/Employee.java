@@ -6,35 +6,35 @@ public abstract class Employee {
     private String nationalInsuranceNumber;
     private double salary;
 
-    public Employee(String name, String nationalInsuranceNumber, double salary) {
+    public Employee(String name, String nationalInsuranceNumber, double salary){
         this.name = name;
         this.nationalInsuranceNumber = nationalInsuranceNumber;
         this.salary = salary;
     }
 
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public void setName(String name) {
-        if( name != null) {
+    public void setName(String name){
+        if(name != null) {
             this.name = name;
         }
     }
 
-    public String getNationalInsuranceNumber() {
+    public String getNationalInsuranceNumber(){
         return nationalInsuranceNumber;
     }
 
-    public void setNationalInsuranceNumber(String nationalInsuranceNumber) {
+    public void setNationalInsuranceNumber(String nationalInsuranceNumber){
         this.nationalInsuranceNumber = nationalInsuranceNumber;
     }
 
-    public double getSalary() {
+    public double getSalary(){
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public void setSalary(int salary){
         this.salary = salary;
     }
 

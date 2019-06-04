@@ -10,17 +10,17 @@ public class DeveloperTest {
 
     @Before
 
-    public void setUp() {
+    public void setUp(){
         developer = new Developer("Beth", "BC135790A", 30000);
     }
 
     @Test
-    public void hasName() {
+    public void hasName(){
         assertEquals("Beth", developer.getName());
     }
 
     @Test
-    public void hasNationalInsuranceNumber() {
+    public void hasNationalInsuranceNumber(){
         assertEquals("BC135790A", developer.getNationalInsuranceNumber());
     }
 
@@ -31,18 +31,18 @@ public class DeveloperTest {
     }
 
     @Test
-    public void hasSalary() {
+    public void hasSalary(){
         assertEquals(30000, developer.getSalary(), 1);
     }
 
     @Test
-    public void canGetPayRise() {
+    public void canGetPayRise(){
         developer.raiseSalary(2500);
         assertEquals(32500, developer.getSalary(), 1);
     }
 
     @Test
-    public void canGetBonus() {
+    public void canGetBonus(){
         assertEquals(300, developer.payBonus(),1);
     }
 }
