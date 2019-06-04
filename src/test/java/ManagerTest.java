@@ -3,6 +3,7 @@ import org.junit.Test;
 import staff.management.Manager;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class ManagerTest {
 
@@ -54,5 +55,6 @@ public class ManagerTest {
     public void setNameCanNotBeNull(){
         manager.setName(null);
         assertEquals("David", manager.getName());
+        assertNotNull(manager.getName());
     }
 }
