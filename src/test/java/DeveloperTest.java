@@ -26,7 +26,7 @@ public class DeveloperTest {
 
     @Test
     public void canSetNationalInsuranceNumber(){
-        developer.setNationalInsuranceINumber("AE112233A");
+        developer.setNationalInsuranceNumber("AE112233A");
         assertEquals("AE112233A", developer.getNationalInsuranceNumber());
     }
 
@@ -37,8 +37,8 @@ public class DeveloperTest {
 
     @Test
     public void canGetPayRise() {
-        developer.raiseSalary(1000);
-        assertEquals(31000, developer.getSalary(), 1);
+        developer.raiseSalary(2500);
+        assertEquals(32500, developer.getSalary(), 1);
     }
 
     @Test
